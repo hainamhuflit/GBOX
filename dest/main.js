@@ -88,6 +88,7 @@ $carousel.flickity({
         change: function (index) {
             let sliderNumber = index + 1;
             $('.studio-detail .bot .number span').text(sliderNumber.toString().padStart(2, 0))
+            $('.detail__slider .bot .download').attr('href', './img/slider-' + sliderNumber +'.jpg')
         },
     },
     off: {
@@ -127,21 +128,6 @@ $('.gal__slider-btn .btn .next').on('click', function (e) {
     $gallery.flickity('next')
 })
 
-
-//Download Btn
-const downloadBtn = document.querySelector('.detail__slider .bot .download'),
-    currentImg = document.querySelector('.detail__slider .slider__list .is-selected img');
-
-downloadBtn?.addEventListener('click', function () {
-    let imgPath = currentImg.getAttribute('src')
-    let fileName = getFileName(imgPath)
-
-    saveAs(imgPath, fileName);
-})
-
-function getFileName(str) {
-    return str.substring(str.lastIndexOf('/') + 1);
-}
 
 //Project img popUp
 const projectImg = document.querySelector('.project .project-img img'),
