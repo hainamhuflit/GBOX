@@ -1,4 +1,16 @@
+//Preloader
+
+let loader = document.querySelector('#preloader');
+
+window.addEventListener('load', function () {
+    loader.classList.add('hide');
+})
+
+
+
+
 //Footer Back to top
+
 const backToTop = document.querySelector('.back-toT');
 
 backToTop.addEventListener('click', function () {
@@ -154,4 +166,6 @@ document.addEventListener('click', function (e) {
     e.stopPropagation();
     popUp?.classList.remove('active');
 })
+
+AOS.init();
 

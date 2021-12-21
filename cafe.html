@@ -24,6 +24,14 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="hambuger">
@@ -88,8 +96,8 @@
     </ul>
 
     <main class="cafe">
-        <section class="welcome" style="background-image: url('./img/bg-top.jpg');">
-            <div class="container">
+        <section class="welcome" style="background-image: url('./img/bg-top.jpg');" > 
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h4>Welcome <br> to</h4>
                 <h2>Gbox coffee</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lacus a sapien ullamcorper auctor et
@@ -97,13 +105,13 @@
                     Etiam interdum arcu lacus, sed pharetra nisi accumsan quis. Nunc facilisis varius risus aliquet
                     sodales. Etiam aliquam maximus ultricies. Nulla varius ante vitae suscipit fermentum.</p>
             </div>
-            <div class="gallery_title">
+            <div class="gallery_title" data-aos="zoom-out" data-aos-duration="1000">
                 <h4>Gallery</h4>
             </div>
         </section>
 
         <section class="gallery">
-            <div class="gallery__slider">
+            <div class="gallery__slider" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="gal__list">
                         <div class="gallery__list">
@@ -152,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="gal__slider-btn">
+            <div class="gal__slider-btn" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="btn">
                         <a class="btn-slider prev" href="">
